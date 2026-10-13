@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Admission</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #f2f6fc;
+        }
+
+        .header {
+            background-color: #174a7e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: lightblue;
+            padding: 15px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        .admission {
+            text-align: center;
+            padding: 25px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 8px;
+            width: 250px;
+        }
+
+        button {
+            background-color: #174a7e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #174a7e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Contact and Admission</h1>
+        <p>ABC Computer Institute</p>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="proj1.html">Home</a></li>
+            <li><a href="proj2.html">Courses</a></li>
+            <li><a href="proj3.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="admission">
+        <h2>Student Admission Form</h2>
+        <br>
+
+        <form>
+            <label for="name">Student Name:</label><br>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+            <br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number">
+            <br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Other</option>
+            </select>
+            <br>
+
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="">Choose a Course</option>
+                <option>Basic Computer</option>
+                <option>HTML & CSS</option>
+                <option>Python</option>
+                <option>SQL</option>
+                <option>Java</option>
+            </select>
+            <br>
+
+            <label for="message">Address:</label><br>
+            <textarea id="message" name="address"
+                      placeholder="Enter your address"
+                      rows="3"></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
